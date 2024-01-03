@@ -30,30 +30,47 @@
 
  <body class="d-flex align-items-center py-4 bg-gradient-dark h-100">
 
- 
-    <main class="w-100 m-auto form-container">
-        <form class="" action="regista_usuario.php" method="post">
-            <h1 class="h3 mb-3 fw-normal">Entrar no Sistema</h1>
+
+
+
+<main class="w-100 m-auto form-container">
+        <form method="post" action="regista_funcionario.php" >
+            <h1 class="h3 mb-3 fw-normal">Regista-te Aqui</h1>
             <div class="form-floating">
-                <input type="text" placeholder="digite o seu nome" class="form-control" id="floatingInput"/>
+                <input type="text" placeholder="digite o seu nome Completo" class="form-control" id="nome"/>
                 
             </div>
             <br/>
             <div class="form-floating">
-                <input type="password" placeholder="digite a sua senha" class="form-control" id="floatingInput"/>
+                <input type="password" placeholder="digite a sua Morada" class="form-control" id="morada"/>
                 
             </div>
-            <div class="form-check text-star my-3">
-                <input type="checkbox" class="form-check-input" id="flexCheckDefault">
-                <label class="form-check-label" id="flexCheckDefault">Aceitar me</label>
+            <br/>
+            <div class="form-floating">
+                <input type="phone" placeholder="telefone" class="form-control" id="telefone"/>
+                
             </div>
-            <button class="btn btn-primary w-100 py-2 ">Entrar</button>
+             <br/>
+            <div class="form-floating">
+                <input type="password" placeholder="digite a sua senha" class="form-control" id="senha"/>
+                
+            </div>
+
+            <div class="form-check text-star my-3">
+                <input type="checkbox" class="form-check-input bg-secondary" id="flexCheckDefault">
+                <label class="form-check-label " id="flexCheckDefault">Aceitar me</label>
+            </div>
+            
+                    <button class="btn btn-success w-100 py-2 ">Enviar</button>
+                    <input type="reset" value="Limpar" class="btn btn-danger mt-1" style="margin-left: 5px;"/>
+                </div>
+            </div>
             <p class="text-body-secondary mt-5 mb-3">Direitos reservados 2024</p>
         </form>    
     </main>
 
 
- <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
