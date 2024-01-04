@@ -34,25 +34,25 @@
 
 
 <main class="w-100 m-auto form-container">
-        <form id="cadastraUsuario" method="post" action="regista_funcionario.php" >
+        <form id="cadastraUsuario" >
             <h1 class="h3 mb-3 fw-normal">Regista-te Aqui</h1>
             <div class="form-floating">
-                <input type="text" placeholder="digite o seu nome Completo" class="form-control" name="nome" id="nome"/>
+               <label>Nome: </label> <input type="text" placeholder="digite o seu nome Completo" class="form-control" name="nome" id="nome"/>
                 
             </div>
             <br/>
             <div class="form-floating">
-                <input type="text" placeholder="digite a sua Morada" class="form-control" name="morada" id="morada"/>
+            <label>Morada: </label> <input type="text" placeholder="digite a sua Morada" class="form-control" name="morada" id="morada"/>
                 
             </div>
             <br/>
             <div class="form-floating">
-                <input type="phone" placeholder="telefone" class="form-control" name="telefone" id="telefone"/>
+            <label>Telefone: </label> <input type="phone" placeholder="telefone" class="form-control" name="telefone" id="telefone"/>
                 
             </div>
              <br/>
             <div class="form-floating">
-                <input type="password" placeholder="digite a sua senha" class="form-control" name="senha" id="senha"/>
+            <label>Senha: </label> <input type="password" placeholder="digite a sua senha" class="form-control" name="senha" id="senha"/>
                 
             </div>
 
@@ -61,10 +61,9 @@
                 <label class="form-check-label " id="flexCheckDefault">Aceitar me</label>
             </div>
             
-                    <button class="btn btn-success w-100 py-2 ">Enviar</button>
+                    <input type="submit" class="btn btn-success w-100 py-2" value="Enviar">
                     <input type="reset" value="Limpar" class="btn btn-danger mt-1" style="margin-left: 5px;"/>
-                </div>
-            </div>
+                
             <p class="text-body-secondary mt-5 mb-3">Direitos reservados 2024</p>
         </form>    
     </main>
