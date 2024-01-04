@@ -1,6 +1,5 @@
 <?php
 
-    
 	$conexao = mysqli_connect("localhost", "root", "", "padaria");
 
 	if(!$conexao){
