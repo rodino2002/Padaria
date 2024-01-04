@@ -34,7 +34,7 @@
 
 
 <main class="w-100 m-auto form-container">
-        <form id="cadastraUsuario" >
+        <form id="cadastraUsuario">
             <h1 class="h3 mb-3 fw-normal">Regista-te Aqui</h1>
             <div class="form-floating">
                <label>Nome: </label> <input type="text" placeholder="digite o seu nome Completo" class="form-control" name="nome" id="nome"/>
@@ -47,7 +47,7 @@
             </div>
             <br/>
             <div class="form-floating">
-            <label>Telefone: </label> <input type="phone" placeholder="telefone" class="form-control" name="telefone" id="telefone"/>
+            <label>Telefone: </label> <input type="phone" placeholder="--- --- ---" class="form-control" name="telefone" id="telefone"/>
                 
             </div>
              <br/>
@@ -58,16 +58,24 @@
 
             <div class="form-check text-star my-3">
                 <input type="checkbox" class="form-check-input bg-secondary" id="flexCheckDefault">
-                <label class="form-check-label " id="flexCheckDefault">Aceitar me</label>
+                <label class="form-check-label " id="flexCheckDefault"> Aceitar me </label>
             </div>
             
-                    <input type="submit" class="btn btn-success w-100 py-2" value="Enviar">
+                    <input class="btn btn-success w-100 py-2" type="submit" id="cad_func_btn" value="Enviar">
                     <input type="reset" value="Limpar" class="btn btn-danger mt-1" style="margin-left: 5px;"/>
                 
             <p class="text-body-secondary mt-5 mb-3">Direitos reservados 2024</p>
         </form>    
     </main>
 
+
+
+
+
+     <!-- SweetAlert2 -->
+    <script src="js/sweetalert.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- JavaScript Libraries -->
@@ -78,10 +86,8 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/sweetalert.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
+   
+    
 
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

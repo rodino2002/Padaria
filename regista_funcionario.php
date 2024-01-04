@@ -1,5 +1,5 @@
 <?php
-
+/*
 	$conexao = mysqli_connect("localhost", "root", "", "padaria");
 
 	if(!$conexao){
@@ -17,5 +17,5 @@
 
 	echo "registado com sucesso";
 	mysqli_close($conexao);
-
+*/
 ?>
