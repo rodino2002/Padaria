@@ -34,7 +34,7 @@
 
 
 <main class="w-100 m-auto form-container">
-        <form id="cadastraUsuario">
+        <form class="wow fadeInUp" id="cadastraUsuario" >
             <h1 class="h3 mb-3 fw-normal">Regista-te Aqui</h1>
             <div class="form-floating">
                <label>Nome: </label> <input type="text" placeholder="digite o seu nome Completo" class="form-control" name="nome" id="nome"/>

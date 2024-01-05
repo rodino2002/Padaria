@@ -32,7 +32,7 @@
 
  
     <main class="w-100 m-auto form-container">
-        <form class="" action="regista_usuario.php" method="post">
+        <form class="wow fadeInUp" action="regista_usuario.php" method="post">
             <h1 class="h3 mb-3 fw-normal">Entrar no Sistema</h1>
             <div class="form-floating">
                 <input type="text" placeholder="digite o seu nome" class="form-control" id="floatingInput"/>

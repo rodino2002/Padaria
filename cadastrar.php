@@ -5,16 +5,16 @@ include_once './conexao.php';
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 
 if(empty($dados['nome'])){
-    $retorna = ['status' => False, 'msg' => "Erro: Necessário preencher o campo Nome"];
+    $retorna = ['status'=> False, 'msg' => "Erro: Necessário preencher o campo Nome"];
 
 }elseif(empty($dados['telefone'])){
-    $retorna = ['status' => False, 'msg' => "Erro: Necessário preencher o campo telefone"];
+    $retorna = ['status'=> False, 'msg' => "Erro: Necessário preencher o campo telefone"];
 
 }elseif(empty($dados['morada'])){
-    $retorna = ['status' => False, 'msg' => "Erro: Necessário preencher o campo morada"];
+    $retorna = ['status'=> False, 'msg' => "Erro: Necessário preencher o campo morada"];
 
 }elseif(empty($dados['senha'])){
-    $retorna = ['status' => False, 'msg' => "Erro: Necessário preencher o campo Senha"];
+    $retorna = ['status'=> False, 'msg' => "Erro: Necessário preencher o campo Senha"];
 
 }else{
     $query_usuario = " INSERT INTO funcionario (Nome, Telefone, Morada, senha) VALUES(:nome, :telefone, :morada, :senha) ";
