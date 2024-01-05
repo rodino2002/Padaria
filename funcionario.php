@@ -42,13 +42,13 @@
             </div>
             <br/>
             <div class="form-floating">
-            <label>Morada: </label> <input type="text" placeholder="digite a sua Morada" class="form-control" name="morada" id="morada"/>
+            <label>Telefone: </label> <input type="phone" placeholder="--- --- ---" class="form-control" name="telefone" id="telefone"/>
                 
             </div>
             <br/>
             <div class="form-floating">
-            <label>Telefone: </label> <input type="phone" placeholder="--- --- ---" class="form-control" name="telefone" id="telefone"/>
-                
+            
+            <label>Morada: </label> <input type="text" placeholder="digite a sua Morada" class="form-control" name="morada" id="morada"/>   
             </div>
              <br/>
             <div class="form-floating">
@@ -74,7 +74,7 @@
 
      <!-- SweetAlert2 -->
     <script src="js/sweetalert.js"></script>
-    <script src="js/main.js"></script>
+   
     <script src="js/custom.js"></script>
 
     <!-- Optional JavaScript -->

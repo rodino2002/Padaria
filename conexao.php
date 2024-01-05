@@ -1,9 +1,10 @@
 <?php
 
-    $host = "localhostt";
+    $host = "localhost";
     $user = "root";
     $pass = "";
     $dbname = "padaria";
+    $port = 3306;
 
     try{
 
