@@ -33,7 +33,7 @@
 
 
 
-<main class="w-100 m-auto form-container">
+<main class="w-100 m-auto form-container wow fadeInUp">
         <form class="wow fadeInUp" id="cadastraUsuario" >
             <h1 class="h3 mb-3 fw-normal">Regista-te Aqui</h1>
             <div class="form-floating">
