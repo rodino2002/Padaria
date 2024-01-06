@@ -26,9 +26,9 @@ if(empty($dados['nome'])){
     $cad_usuario->execute();
 
     if($cad_usuario->rowCount()){
-        $retorna = ['status'=> true, "Usuário cadastrado com sucesso"];
+        $retorna = ['status'=> true, 'msg' => "Usuário cadastrado com sucesso"];
     }else{
-        $retorna = ['status'=> false, "Erro: Usuário não cadastrado com sucesso"];
+        $retorna = ['status'=> false, 'msg' => "Erro: Usuário não cadastrado com sucesso"];
     }
 
 }
