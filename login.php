@@ -1,3 +1,51 @@
+<?php
+    include('./conexao.php');
+
+    if(isset($_POST['nome']) || isset($_POST['senha'])){
+     
+      if(strlen($_POST['nome']) == 0){
+         
+        
+        echo "<br><br>rPreencha seu nome";
+        //<script> alert "Preencha seu email"; </script>
+       // <script> alert " echo "Preencha seu email"; " </script>
+         
+      } else if(strlen($_POST['senha']) == 0){
+        
+         
+        echo "<br><br>preencha sua senha";
+        
+      } else {
+
+          $usuario = $mysqli -> real_escape_string($_POST['nome']);
+          $senha = $mysqli -> real_escape_string($_POST['senha']);
+
+          $sql_code = "SELECT * FROM funcionario WHERE nome = '$usuario' AND senha = '$senha'";
+          $sql_query = $mysqli ->query($sql_code) or die("falha na execusao do codigo sql".$mysqli->error);
+
+          $quantidade = $sql_query->num_rows;
+          if($quantidade == 1){
+              $usuario = $sql_query->fetch_assoc();
+              
+              if(!isset($_SESSION)){
+                session_start();
+              }
+              $_SESSION['id'] = $usuario['id'];
+              $_SESSION['nome'] = $usuario['nome'];
+
+              header("Location: painel.php");
+          }else{
+              echo"<br><br>falha ao logar! nome ou senha incorretos";
+
+          }
+      }
+
+    }
+?>
+
+
+
+
 <!doctype html>
 <html lang="en" data-bs-theme="dark" class="h-100">
  <head>
@@ -32,15 +80,15 @@
 
  
     <main class="w-100 m-auto form-container">
-        <form class="wow fadeInUp" action="regista_usuario.php" method="post">
+        <form class="wow fadeInUp" action="" method="post">
             <h1 class="h3 mb-3 fw-normal">Entrar no Sistema</h1>
             <div class="form-floating">
-                <input type="text" placeholder="digite o seu nome" class="form-control" id="floatingInput"/>
+                <input type="text" placeholder="digite o seu nome" class="form-control" name="nome" id="nome"/>
                 
             </div>
             <br/>
             <div class="form-floating">
-                <input type="password" placeholder="digite a sua senha" class="form-control" id="floatingInput"/>
+                <input type="password" placeholder="digite a sua senha" class="form-control" name="senha" id="senha"/>
                 
             </div>
             <div class="form-check text-star my-3">
